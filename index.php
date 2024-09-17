@@ -21,6 +21,7 @@ $blog_posts = [
 <html>
     <head>
         <title>Assignment3</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <h2>Blog Posts:</h2><hr>
@@ -31,5 +32,6 @@ $blog_posts = [
                 <br>
             </div>
         <?php }?>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-4r74Eu8eBZxQsEwEe+g1mZThj5RT0MI5r9sdTVEyo0fUBUghHm56Ady0mNqNeJDg" crossorigin="anonymous"></script>
     </body>
 </html>

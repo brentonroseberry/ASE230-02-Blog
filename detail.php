@@ -22,6 +22,7 @@ $blog_posts = [
 ?>
     <head>
         <title>Assignment3</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <h2><?=$blog_posts[$i]["title"]?></h2>
