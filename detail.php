@@ -1,7 +1,7 @@
 <html>
     <a href="index.php">Go Back</a>
 <?php
-$i=$_GET['index'];
+$post_id=$_GET['post_id'];
 $blog_posts = [
     ["title"=>"How to cook",
         "content"=>"Just throw some stuff together, I don't know",
@@ -25,10 +25,10 @@ $blog_posts = [
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <h2><?=$blog_posts[$i]["title"]?></h2>
-        <h3>By: <?=$blog_posts[$i]["author"]?></h3>
-        <h4>Published <?=$blog_posts[$i]["date"]?></h4>
-        <p><?=$blog_posts[$i]["content"]?></p>
+        <h2><?=$blog_posts[$post_id]["title"]?></h2>
+        <h3>By: <?=$blog_posts[$post_id]["author"]?></h3>
+        <h4>Published <?=$blog_posts[$post_id]["date"]?></h4>
+        <p><?=$blog_posts[$post_id]["content"]?></p>
     </body>
 
 </html>

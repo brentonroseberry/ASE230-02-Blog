@@ -16,8 +16,14 @@ $blog_posts = [
         "author"=>"Old Lady",
         "date"=>"9/2/2024"
     ]
-]
-?>
+];
+function printTitles($i, $blog_post){?>
+    <div>
+        <h3><a href="detail.php?post_id=<?= $i ?>"><?= $blog_post["title"]?></a></h3>
+        <h4>By: <?= $blog_post["author"]?></h4>
+        <br>
+    </div>
+<?php } ?>
 <html>
     <head>
         <title>Assignment3</title>
@@ -25,13 +31,6 @@ $blog_posts = [
     </head>
     <body>
         <h2>Blog Posts:</h2><hr>
-        <?php for($i=0;$i<count($blog_posts);$i++){ ?>
-            <div>
-                <h3><a href="detail.php?index=<?= $i ?>"><?= $blog_posts[$i]["title"]?></a></h3>
-                <h4>By: <?= $blog_posts[$i]["author"]?></h4>
-                <br>
-            </div>
-        <?php }?>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-4r74Eu8eBZxQsEwEe+g1mZThj5RT0MI5r9sdTVEyo0fUBUghHm56Ady0mNqNeJDg" crossorigin="anonymous"></script>
+        <?php for($i=0;$i<count($blog_posts);$i++){ printTitles($i, $blog_posts[$i]); }?>
     </body>
 </html>
